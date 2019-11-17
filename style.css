@@ -9,6 +9,7 @@ body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
   background-color: white;
+  overflow-x:hidden;
 }
 
 header{
@@ -21,7 +22,7 @@ header{
 
   
 }
-
+/* Title */
 #title {
   margin-top: 1;
   margin-bottom:3;
@@ -29,7 +30,7 @@ header{
   font-size: 20px;
   color: black;
   text-align: center;
-  width: 88.3%;
+  width: 91.5%;
 }
 
 .title {
@@ -38,8 +39,8 @@ header{
   }
 
 
+/* Year */
 h2{
-
   height: 1em;  
   font-size: 4em;
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
@@ -48,9 +49,19 @@ h2{
   margin-top: 0px;
   margin-bottom: 30px;
 text-align:center;
-  width: 88.3%;
-
+  width: 91.5%;
 }
+
+/* Solid line */
+hr {
+  margin-top:0px;
+  color:black;
+  width: 93%;
+  float: left;
+}
+
+
+
 
 p{
   margin: 0px 0px 24px 0px;  
@@ -61,20 +72,25 @@ p{
 
 /* Parks title */
 #YellowStone, #Acadia, #GrandCanyon, #GreatSmoky {
-  width: 22%;
+  width: 23%;
   float: left;
   align-content: Center;
+  margin-top:2em;
   margin-right: 1.3em;
   margin-bottom:1.3em;
   position:relative;
+  transform-origin:center;
+  transform: skewY(10deg);
 }
 
-hr {
-  margin-top:0px;
-  color:black;
-  width: 88.3%;
-  float: left;
+/* #Acadia {
+  transform: skewy(-10deg);
 }
+
+#GreatSmoky {
+  transform: skewY(-10deg);
+}  */
+
 
 .yellowstone-img, .acadia-img, .grandcanyon-img, .smoky-img{
     width:100% ;
@@ -97,13 +113,17 @@ hr {
 .map-item{
     z-index: -1;
 
+
 }
 
 .map-item:hover{
-    transform-origin: left top;
+  transform-origin:center;
+    /* transform-origin: left top; */
       z-index: 1;
-    transform: scale(1.5);
+    /* transform: scale(1.3); */
     position: relative;
+  
+    transform:skewY(-20deg);
 }
 
 .bold {

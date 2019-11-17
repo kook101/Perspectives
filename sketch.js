@@ -70,11 +70,10 @@
           yDiv.append(newDiv);
           
           //Link to google images
-          // newDiv.setAttribute("onclick", function newDivOverlay(){
-            
-          // })
           newDiv.setAttribute("onclick", "window.open('https://www.google.com/search?tbm=isch&q=yellowstone+" + mapData[i].date + "', '_blank')");
-          newDiv.setAttribute("onclick", "over")
+          
+          //Overlay page
+          
  
 
           
